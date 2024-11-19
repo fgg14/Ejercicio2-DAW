@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Cursos Cerámica</title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <nav>
+                <ul>
+                    <li><img src="img/isologo-taller.png" alt="Isologo por Freepik - Flaticon"></li>
+                    <li><a href="index.html"><h1>el taller</h1></a></li> 
+                    <li><a href="que-es-la-ceramica.html">CERÁMICA</a></li>
+                    <li><a href="cursos.html">CURSOS</a></li>
+                    <li class="enlace-actual">INSCRIPCIÓN</li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2>Inscripción a los cursos</h2>
+
+        <div class="cuerpo">
+            <p id="campos-info">Los campos señalados con * son obligatorios</p>
+            <form mathod="post" name="formulario-cursos">
+                <fieldset class="fieldset-principal">
+                    <legend>Detalles de la inscripción</legend>
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" name="nombre" id="nombre" required maxlength="64" 
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ'-]{2,64}"/>
+                    <label for="apellidos">Apellidos *</label>
+                    <input type="text" name="apellidos" id="apellidos" required
+                    maxlength="128" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ'-]{2,128}"/>
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" name="correo" id="correo" required/>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" required/>
+                    <label for="fecha-nac">Fecha de nacimiento *</label>
+                    <input type="date" name="fecha-nac" id="fecha-nac" required/>
+                    <label for="curso">Curso *</label>
+                    <select name="curso" required>
+                        <option value="">Selecciona el curso</option>
+                        <option value="torno">Torno</option>
+                        <option value="ceramica">Cerámica</option>
+                        <option value="modelado">Modelado</option>
+                        <option value="joyeria-ceramica">Joyería Cerámica</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="otras-informaciones">
+                    <legend class="otras-info">Otras informaciones</legend>
+                    <fieldset>
+                        <legend>¿Has hecho cursos con nosotros? *</legend>
+                        <label for="si">Sí</label>
+                        <input type="radio" name="si" id="si" required/>
+                        <label for="no">No</label>
+                        <input type="radio" name="no" id="no" required/>
+                    </fieldset>
+                    <label for="comentarios">¿Quieres comentar o preguntar algo?</label>
+                    <textarea name="comentarios" id="comentarios" cols="140" rows="20"></textarea>
+                </fieldset>
+
+                <fieldset class="metodo-pago">
+                    <legend>Elige un método de pago *</legend>
+                    <input type="radio" name="tranferencia" id="tranferencia" required/>
+                    <label for="tranferencia">Transferencia</label>
+                    <input type="radio" name="debito-credito" id="debito-credito" required/>
+                    <label for="debito-credito">Tarjeta de débito / crédito</label>
+                    <input type="radio" name="efectivo" id="efectivo" required/>
+                    <label for="efectivo">En efectivo</label>
+                </fieldset>
+
+                <div class="cabecera-formulario">
+                    <p id="info-cabecera">
+                        INFORMACIÓN   SOBRE   PROTECCIÓN   DE   DATOS   DE  <b> EL  TALLER.   Finalidades:</b>   recogida   de   datos   para   la
+                        inscripción como socio del interesado. <b>Legitimación:</b> Consentimiento del interesado. <b>Destinatarios:</b> No están previstas
+                        cesiones   de   datos   a   terceros,   excepto   obligación   legal.   <b>Derechos:</b>   Puede   retirar   su   consentimiento   en   cualquier
+                        momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="">info@eltaller.es.</a> Información
+                        <b>Adicional:</b> Puede ampliar la información en el enlace de <a href="">Aviso Legal</a> y <a href="">Política de privacidad</a>.
+                    </p>
+                    <input type="checkbox" id="acepto-politicas" name="acepto-politicas" required>
+                    <label for="acepto-politicas">He leído y acepto la <a href="" id="pol-priv">política de privacidad</a> *</label>
+                    <br><input type="submit" id="inscribir" value="INSCRÍBEME">
+                </div>
+            </form>
+        </div>
+
+        
+
+        <footer class="footer">
+            <ul>
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Política de cookies</a></li>
+            </ul>
+            <p><small>2023 &#169; Francisco Ganga</small></p>
+        </footer>
+    </div>
+</body>
+</html>
