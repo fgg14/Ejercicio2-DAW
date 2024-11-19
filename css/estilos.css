@@ -1,0 +1,247 @@
+/*General para todos los html*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.contenedor{
+    width: 100%; /* Asegura que se ajuste al 100% del viewport en pantallas pequeñas */
+    max-width: 1140px; /* Limita el ancho máximo en pantallas grandes */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    overflow: hidden; /* Oculta cualquier desbordamiento horizontal */
+    text-align: center;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    font-style: normal;
+}
+/* Añade espacio debajo del nav */
+nav {
+    margin-bottom: 40px;
+}
+/* Añade espacio encima y debajo del main */
+main {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+/* Añade espacio encima del footer */
+.index-footer {
+    margin-top: 180px;
+}
+h1, h2, h3 {
+    font-weight: 700;
+    font-size: 40px;
+}
+/*-------------------------------------------------*/
+/* index.html */
+.index{
+    background-image: url("../img/home-hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    color: white;
+}
+.index-nav > ul li, .index-footer > ul li{
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 8px;
+    display: inline;
+    margin-right: 15px;
+}
+.index-nav > ul li a, .index-footer > ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+#titulo{
+    font-weight: bold;
+    font-size: 8rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+#subtitulo{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+/*-------------------------------------------------------------------*/
+/* Para que-es-la-ceramica, cursos, inscripcion-cursos juntos (sus nav y footer)*/
+nav > ul li, footer > ul li{
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 8px;
+    display: inline;
+    margin-right: 15px;
+}
+.enlace-actual{
+    text-decoration-line:underline;
+    text-decoration-style:solid;
+}
+ul li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+ul{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.header, .footer{
+    background-color: #000000;
+    color: white;
+    width: 100%;
+}
+.header{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 20px;
+}
+.footer{
+    text-align: left;
+    margin-top: 50px;
+}
+.introduccion > h2{
+    font-size: 2rem;
+}
+article p, article > h3{
+    text-align: left;
+}
+article > h3{
+    font-size: 1.25rem;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #000000;
+}
+/*--------------------------------------------------------------------------*/
+/*que-es-la-ceramica.html*/
+.utensilios ul{
+    color: #000000;
+    text-align: left;
+}
+.tecnicas-materiales dl > dt{
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+dd{
+    text-align: left;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+#wikipedia > small a{
+    text-align: left;
+    color: rgb(240, 93, 80);
+    text-decoration-line: none;
+}
+#wikipedia > small a:hover{
+    color: rgba(240, 93, 80, 0.5);;
+}
+/*--------------------------------------------------------------------------------*/
+/* cursos.html */
+#anyo{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: -13px;
+}
+figcaption, #intro-cursos{
+    text-align: left;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+figcaption > small a{
+    text-align: left;
+    color: rgb(240, 93, 80);
+    text-decoration-line: none;
+}
+figcaption > small a:hover{
+    color: rgba(240, 93, 80, 0.5);;
+}
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    margin-top: 25px;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+}
+/* Estilo para la primera columna */
+td:first-child {
+    font-weight: bold;
+}
+/* Estilo para filas alternas */
+tr:nth-child(even) {
+    background-color: #64d8cb;
+}
+/* Título de la tabla */
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/* Estilo para la nota debajo de la tabla */
+.nota {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+tr > th{
+    text-align: left;
+}
+caption, .nota, tr > th{
+    border: black solid;
+    border-left-color:white ;
+    border-right-color:white ;
+}
+/*------------------------------------------------------------------------*/
+/* inscripcion-cursos.html */
+legend{
+    font-weight: bold;
+    font-size: 1.40rem;
+}
+#campos-info{
+    text-align: left;
+    font-size: 0.75rem;
+    padding-left: 15px;
+}
+.otras-info{
+    padding-top: 40px;
+    padding-bottom: 45px;
+}
+.cabezera-formulario{
+    text-align: left;
+}
+.metodo-pago{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    text-align: left;
+}
+.fieldset-principal label{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#info-cabecera a, #pol-priv{
+    color: rgb(240, 93, 80);
+    text-decoration-style: dotted;
+}
+#inscribir{
+    color: #FFFFFF;
+    background-color: orangered;
+    padding: 20px;
+    margin-top: 10px;
+}
+.cabecera-formulario{
+    text-align: left;
+}
